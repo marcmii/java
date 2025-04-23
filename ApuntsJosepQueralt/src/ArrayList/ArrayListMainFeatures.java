@@ -33,6 +33,11 @@ public class ArrayListMainFeatures {
 		// Check for element
 		System.out.println(friendsArrayList.contains("Marc"));
 		System.out.println(friendsArrayList.contains("Luke"));
+		
+		// Clear ArrayList & putting one name to show how is clear and "updated"
+		friendsArrayList.clear();
+		friendsArrayList.add("Marc");
+		System.out.println(friendsArrayList);
 	}
 
 }

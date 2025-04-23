@@ -13,13 +13,20 @@ public class Metodes2_1 {
         String paraulaBarrejada = barrejarParaula(word);
         System.out.println("Paraula barrejada: " + paraulaBarrejada);
         
+        System.out.println("Escriu una frase: ");
+        String sentence = in.nextLine();
+        
+        String fraseBarrejada = barrejarFrase(sentence);
+        System.out.println("Frase berrejada: "+ fraseBarrejada);
+        
         in.close();
     }
 
+    // method mix word
     public static String barrejarParaula(String paraula) {
         char letters[] = paraula.toCharArray();
         char c[] = new char[paraula.length()];
-        boolean[] usedPositions = new boolean[paraula.length()]; // Array per controlar les posicions utilitzades
+        boolean[] usedPositions = new boolean[paraula.length()]; 
         
         Random rand = new Random();
 
@@ -27,12 +34,31 @@ public class Metodes2_1 {
             int position;
             do {
                 position = rand.nextInt(paraula.length());
-            } while (usedPositions[position]); // Buscar una nova posició si ja està ocupada
+            } while (usedPositions[position]); 
             
-            c[position] = letters[i]; // Assignar el caràcter a la posició aleatòria
-            usedPositions[position] = true; // Marcar la posició com a utilitzada
+            c[position] = letters[i]; 
+            usedPositions[position] = true; 
         }
         
-        return new String(c); // Retornar la nova paraula barrejada
+        return new String(c); 
     }
+    
+    // method mix sentence
+    
+    public static String barrejarFrase(String frase) {
+    	
+    	String Paraules[]= frase.split(" ");
+    	
+    	
+    	
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
