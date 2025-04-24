@@ -49,8 +49,19 @@ public class Metodes2_1 {
     	
     	String Paraules[]= frase.split(" ");
     	
+    	ArrayList<String> wordList = new ArrayList<>();
     	
+    	for (String paraula : wordList) {
+			wordList.add(paraula);
+			
+		}
     	
+    	for (String paraula : wordList) {
+			System.out.println("-" + paraula);
+			
+		}
+    	
+    	return paraula;
     }
     
     

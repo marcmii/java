@@ -1,5 +1,6 @@
 package ArrayList;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -38,6 +39,13 @@ public class ArrayListMainFeatures {
 		friendsArrayList.clear();
 		friendsArrayList.add("Marc");
 		System.out.println(friendsArrayList);
+		
+		// Add element from variable
+		String name = "Jordi";
+		friendsArrayList.add(name);
+		System.out.println(friendsArrayList);
+		
+		
 	}
 
 }

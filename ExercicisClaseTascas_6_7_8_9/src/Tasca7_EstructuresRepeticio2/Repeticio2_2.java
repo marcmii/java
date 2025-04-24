@@ -10,11 +10,21 @@ public class Repeticio2_2 {
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Entra una frase: ");
-		String chain = in.nextLine();
+		String sentence = in.nextLine();
 		
-		for (int i = 0; i < chain.length(); i++) {
-			char c = chain.charAt(i);
-			char encryptedChar = (char) ((int) c + 1); 
+		for (int i = 0; i < sentence.length(); i++) {
+			
+			char c = sentence.charAt(i);
+			char encryptedChar;
+			
+			if (sentence.charAt(i) == 'e') {
+				encryptedChar = ' ';
+			} else if (sentence.charAt(i) == ' ') {
+				encryptedChar = 'e';
+			} else {
+					 
+			}
+			
 			System.out.print(encryptedChar);
 		}
 	}
