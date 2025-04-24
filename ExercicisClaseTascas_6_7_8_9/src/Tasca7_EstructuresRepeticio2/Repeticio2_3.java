@@ -1,6 +1,6 @@
 package Tasca7_EstructuresRepeticio2;
 
-import java.util.Iterator;
+
 import java.util.Scanner;
 
 public class Repeticio2_3 {

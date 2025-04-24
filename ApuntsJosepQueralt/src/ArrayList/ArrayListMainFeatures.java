@@ -1,6 +1,5 @@
 package ArrayList;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -37,6 +36,7 @@ public class ArrayListMainFeatures {
 		
 		// Clear ArrayList & putting one name to show how is clear and "updated"
 		friendsArrayList.clear();
+		System.out.println(friendsArrayList.isEmpty());
 		friendsArrayList.add("Marc");
 		System.out.println(friendsArrayList);
 		
@@ -44,6 +44,7 @@ public class ArrayListMainFeatures {
 		String name = "Jordi";
 		friendsArrayList.add(name);
 		System.out.println(friendsArrayList);
+		
 		
 		
 	}
