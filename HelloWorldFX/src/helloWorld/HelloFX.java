@@ -21,9 +21,6 @@ public class HelloFX extends Application {
 		Label lbl = new Label();
 		lbl.setText("Encara no he saludat!");
 		
-		TextField tF = new TextField();
-		
-		
 		btn.setOnAction(event -> {
 			nClicks++;
 			lbl.setText("Has saludat " + nClicks + " vegades");
